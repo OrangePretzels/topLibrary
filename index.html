@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <h1>Library</h1>
+      <button id="show-modal-btn">Click to Add!</button>
+      <div id="overlay">
+        <div id="modal">
+          <form action="" id="form-modal-section">
+            <label for="">Book</label>
+            <input type="text" name="" id="title" />
+            <label for="">Author</label>
+            <input type="text" name="" id="author" />
+            <label for="">Pages</label>
+            <input type="number" name="" id="pages" />
+            <label for="">Have you read it?</label>
+            <input type="checkbox" name="" id="read" min="1" max="2" />
+            <label for=""></label>
+            <input
+              type="submit"
+              value="Click Here to Send Request"
+              id="save-modal-btn"
+            />
+          </form>
+          <button id="close-modal-btn">X</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="listOfBooks"></div>
+    </main>
+    <script src="code.js"></script>
+  </body>
+</html>

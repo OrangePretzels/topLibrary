@@ -1,0 +1,139 @@
+* {
+  background-color: black;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  /* display: flex; */
+}
+
+button {
+  background-color: black;
+  height: 4rem;
+  width: 6rem;
+  color: white;
+  border: blueviolet 1px solid;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+  background-color: hotpink;
+  color: black;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+
+#modal {
+  max-width: 600px;
+  height: 300px;
+  margin: auto;
+  color: white;
+  background-color: rgba(200, 198, 201, 0.568);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#form-modal-section {
+  color: blueviolet;
+  font-weight: bold;
+  font-size: 1.25rem;
+  display: grid;
+}
+
+#save-modal-btn {
+  background-color: rgb(255, 255, 255);
+}
+
+#save-modal-btn:hover {
+  background-color: blueviolet;
+  color: white;
+}
+#close-modal-btn {
+  margin-left: 75%;
+  height: 80px;
+  border-radius: 50%;
+}
+
+input {
+  height: 50px;
+}
+
+input,
+select,
+textarea {
+  text-align: center;
+  font-size: 1.25rem;
+  color: blueviolet;
+}
+
+h1 {
+  color: blueviolet;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+}
+
+.listOfBooks {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(94, 12, 94);
+  border: solid black 1px;
+  border-radius: 15px;
+  width: fit-content;
+  justify-content: space-between;
+}
+
+.listOfBooks > * {
+  margin: 10px;
+  border-radius: 10px;
+  height: 175px;
+  width: 250px;
+  text-align: center;
+  color: rgb(160, 88, 228);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: solid 1px aliceblue;
+}
+
+.listOfBooks > * > * {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.removeBtn {
+  width: 25px;
+  height: 25px;
+  border: 0;
+  /* margin-left: 175px; */
+}
+
+.readButton {
+  display: grid;
+  height: 2rem;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
